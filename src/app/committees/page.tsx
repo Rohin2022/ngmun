@@ -1,6 +1,6 @@
 
-export default function page() {
+export default function CommitteePage() {
   return (
-    <div>page</div>
+    <div>Committee Page</div>
   )
 }
