@@ -9,7 +9,7 @@ export default function CommitteePage() {
         description="Explore the committees offered for delegates of all experience levels"
         buttonText="View Background Guide"
         hasButton={false}
-        backgroundImage="/background.jpeg"
+        backgroundImage="/background2.jpeg"
       />
     </div>
   );

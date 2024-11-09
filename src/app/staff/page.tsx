@@ -9,7 +9,7 @@ export default function StaffPage() {
         subtitle=""
         description="The dedicated team behind Noble and Greenough Model UN Conference"
         buttonText="Register Now"
-        backgroundImage="/background.jpeg"
+        backgroundImage="/background2.jpeg"
       />
     </div>
   );

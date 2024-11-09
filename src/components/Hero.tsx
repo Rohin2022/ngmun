@@ -19,7 +19,11 @@ export default function Hero({
 }: HeroProps) {
   return (
     <div className="w-full h-[100vh] relative overflow-hidden flex items-center justify-center">
-      <div className="absolute inset-0 bg-blue-900 opacity-30 z-10"></div>
+      {/* Lighter overlay */}
+      <div className="absolute inset-0 bg-blue-800/20 z-10"></div>
+      <div className="absolute inset-0 bg-black/20 z-20"></div>
+      
+      {/* Background image */}
       <Image
         src={backgroundImage}
         alt="Background"
@@ -28,21 +32,24 @@ export default function Hero({
         quality={100}
         priority
       />
-      <div className="relative z-20 text-center px-4 md:px-0">
-        <h1 className="text-white font-bold mb-4 text-4xl sm:text-5xl md:text-6xl leading-tight">
-          <span className="block whitespace-nowrap">{title}</span>
-          <span className="block">{subtitle}</span>
+      
+      {/* Content */}
+      <div className="relative z-30 text-center px-4 md:px-0 max-w-4xl">
+        <h1 className="text-white font-bold mb-6">
+          <span className="block text-5xl md:text-7xl mb-2">{title}</span>
+          <span className="block text-4xl md:text-6xl">{subtitle}</span>
         </h1>
-        <div className="max-w-md mx-auto">
-          <p className="text-white text-sm md:text-md font-bold mb-8">
-            {description}
-          </p>
-          {hasButton ? (
-            <button className="bg-primary text-white font-bold py-2 px-6 rounded-3xl">
-              {buttonText}
-            </button>
-          ) : null}
-        </div>
+        
+        <p className="text-white text-lg md:text-xl mb-8 max-w-2xl mx-auto">
+          {description}
+        </p>
+        
+        {hasButton && (
+          <button className="bg-[#2B82E8] hover:bg-blue-600 text-white font-semibold 
+            py-3 px-8 rounded-full transition duration-300">
+            {buttonText}
+          </button>
+        )}
       </div>
     </div>
   );
