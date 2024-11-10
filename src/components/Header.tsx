@@ -35,7 +35,7 @@ export default function Navbar() {
   return (
     <nav className="fixed top-2 left-0 right-0 w-full h-12 md:h-16 z-[4000]">
       <div className={`h-full w-full transition-all duration-300`}>
-        <div className="h-full w-full px-4 md:px-[20%] mx-auto max-w-screen-2xl">
+        <div className="h-full md:max-w-4xl w-full px-4 mx-auto">
           <div className={`flex h-full gap-2 w-full items-center justify-between md:rounded-full transition-all duration-300 ${
             scrolled ? 'md:bg-white/30 md:backdrop-blur-md md:px-6' : ''
           }`}>
@@ -50,14 +50,16 @@ export default function Navbar() {
                 loading="eager"
               />
             </Link>
-            <div className="md:flex items-center gap-4 lg:gap-8">
+            
+            {/* Desktop Navigation */}
+            <div className="hidden md:flex items-center gap-4 lg:gap-8">
               {navItems.map((item) => (
                 <Link
                   key={item.name}
                   href={item.href}
                   className={`relative pb-1 transition-colors duration-300 ${
                     scrolled ? 'text-gray-800' : 'text-primary-foreground'
-                  } hover:opacity-80`}
+                  } hover:opacity-80 text-sm`}
                 >
                   {item.name}
                   {pathname === item.href && (
@@ -68,6 +70,15 @@ export default function Navbar() {
                 </Link>
               ))}
             </div>
+
+            {/* Mobile Menu Button */}
+            <Button
+              variant="ghost"
+              className="md:hidden"
+              size="icon"
+            >
+              <Menu className={`h-6 w-6 ${scrolled ? 'text-gray-800' : 'text-primary-foreground'}`} />
+            </Button>
           </div>
         </div>
       </div>

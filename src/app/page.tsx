@@ -2,8 +2,14 @@
 
 import { Button } from "@/components/shadcnComponents/button";
 import Image from "next/image";
-import { ChevronRight, ChevronDown, MoveDown, ArrowRight, Scroll } from "lucide-react";
-import { useEffect, useRef, useState } from "react";
+import {
+  ChevronRight,
+  ChevronDown,
+  MoveDown,
+  ArrowRight,
+  Scroll,
+} from "lucide-react";
+import { useEffect, useRef, useState, ReactNode } from "react";
 import Link from "next/link";
 
 // Utility function for scroll animations
@@ -22,9 +28,16 @@ const useScrollAnimation = () => {
   return scrollY;
 };
 
-// Animation component for fade-in-up effect
-const AnimateOnScroll = ({ children, className = "" }) => {
-  const elementRef = useRef(null);
+interface AnimateOnScrollProps {
+  children: ReactNode;
+  className?: string;
+}
+
+const AnimateOnScroll = ({
+  children,
+  className = "",
+}: AnimateOnScrollProps) => {
+  const elementRef = useRef<HTMLDivElement | null>(null);
   const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
@@ -72,7 +85,16 @@ const ScrollIndicator = () => {
 };
 
 export default function Home() {
+  const [hasScrolled, setHasScrolled] = useState(false);
+
   const scrollY = useScrollAnimation();
+
+  useEffect(() => {
+    if (scrollY > 50 && !hasScrolled) {
+      // Check if user has scrolled more than 50px
+      setHasScrolled(true);
+    }
+  }, [scrollY, hasScrolled]);
 
   return (
     <main className="min-h-screen bg-gray-50 overflow-x-hidden">
@@ -134,7 +156,7 @@ export default function Home() {
             </Button>
           </Link>
         </div>
-        <ScrollIndicator />
+        {hasScrolled ? null : <ScrollIndicator />}
       </div>
 
       {/* Main Content Section */}
@@ -162,7 +184,7 @@ export default function Home() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
             {/* Event Information Card */}
             <AnimateOnScroll>
-              <Link href="/staff">
+              <Link href="/info">
                 <div className="cursor-pointer text-center transform transition-all duration-300 hover:scale-105">
                   <div className="w-12 h-12 bg-[#4A90E2] rounded-full flex items-center justify-center mx-auto mb-3">
                     <svg
