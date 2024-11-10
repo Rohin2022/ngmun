@@ -66,7 +66,7 @@ export default function SidebarDrawer({ isOpen, onClose, navItems }: SidebarDraw
                     onClick={onClose}
                     className={`flex items-center px-6 py-3 my-1 mx-3 rounded-xl transition-all duration-200 ${
                       pathname === item.href
-                        ? 'bg-primary text-primary-foreground shadow-lg shadow-primary/20'
+                        ? 'text-primary border-[1.5px] border-primary/30'
                         : 'text-gray-700 hover:bg-gray-100'
                     }`}
                   >
