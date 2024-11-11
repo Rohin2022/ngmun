@@ -1,6 +1,6 @@
 "use client";
 
-import { Button } from "@/components/shadcnComponents/button";
+import { Button } from "@/components/ui/button";
 import Image from "next/image";
 import {
   ChevronRight,
@@ -162,7 +162,7 @@ export default function Home() {
       {/* Main Content Section */}
       <div className="relative -mt-24 md:-mt-24 xl:-mt-48 md:px-4 lg:px-8 z-40">
         {/* Main content card with responsive design */}
-        <div className="md:max-w-4xl w-full mx-auto bg-white shadow-lg md:rounded-t-3xl p-6">
+        <div className="md:max-w-4xl w-full mx-auto bg-white shadow-lg md:rounded-3xl p-6 mb-8">
           {/* Welcome Section */}
           <AnimateOnScroll>
             <div className="text-center mb-12">
