@@ -33,7 +33,7 @@ export default function SidebarDrawer({ isOpen, onClose, navItems }: SidebarDraw
             initial={{ x: "100%" }}
             animate={{ x: 0 }}
             exit={{ x: "100%" }}
-            transition={{ type: "spring", damping: 20, stiffness: 100 }}
+            transition={{ type: "spring", damping: 20, stiffness: 300 }}
             className="fixed top-0 right-0 h-full w-[300px] bg-white z-[4002] shadow-2xl md:hidden"
           >
             {/* Header */}
