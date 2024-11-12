@@ -64,12 +64,5 @@ const AnimateOnScroll = ({
   );
 };
 
-const ScrollIndicator = () => {
-  return (
-    <div className="fixed bottom-2 left-1/2 transform -translate-x-1/2 z-40 flex flex-col items-center justify-center">
-      <MoveDown strokeWidth={1} className="text-white/90 w-16 h-16" />
-    </div>
-  );
-};
 
-export { ScrollIndicator, AnimateOnScroll, useScrollAnimation };
+export { AnimateOnScroll, useScrollAnimation };
