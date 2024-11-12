@@ -117,7 +117,7 @@ export default function Register() {
   };
 
   return (
-    <main className="min-h-screen bg-gray-50">
+    <main className="min-h-screen bg-gray-50 flex flex-col items-center justify-center">
       {/* Hero section with parallax */}
       <div className="w-full h-[60vh] relative overflow-hidden flex items-center justify-center">
         <div className="absolute inset-0 bg-blue-800/20 z-10"></div>
@@ -147,7 +147,7 @@ export default function Register() {
       </div>
 
       {/* Registration Form Section */}
-      <div className="relative px-4 py-12 z-40">
+      <div className="relative z-40 py-12 px-4 md:px-0 max-w-3xl">
         <div className="max-w-3xl mx-auto">
           <Card className="backdrop-blur-sm bg-white/90 shadow-lg">
             <CardHeader>
