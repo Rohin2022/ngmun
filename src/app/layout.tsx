@@ -7,6 +7,9 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata = {
   title: "NGMUN",
   description: "Noble and Greenough Model UN Conference",
+  icons: {
+    icon: './favicon.ico',
+  },
 };
 
 export default function RootLayout({
