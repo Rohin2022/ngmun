@@ -114,26 +114,12 @@ export default function Register() {
 
     setIsSubmitting(true);
 
-    const apiUrl = 'https://script.google.com/macros/s/AKfycbzmP7MdiPbket0S7LkNMRzgZJvBSQF6x5e5LbUGDaj1RgdarIT-CNy51zTXUbQ56ssV/exec';
-
     try {
-      // First, make a preflight OPTIONS request
-      await fetch(apiUrl, {
-        method: 'OPTIONS',
-        mode: 'cors',
-        headers: {
-          'Accept': 'application/json',
-          'Content-Type': 'application/json',
-        },
-      });
-
-      // Then make the actual POST request
-      const response = await fetch(apiUrl, {
+      // Replace YOUR_GOOGLE_SCRIPT_URL with the URL you got from deployment
+      const response = await fetch('https://script.google.com/macros/s/AKfycbyEX58Hiv_3Skxuko-Pvo9g-CpGtT3IfTtc73oiB3FZLmfVkTTcJhCLJOtCqIVLLGrG/exec', {
         method: 'POST',
-        mode: 'cors',
         headers: {
-          'Accept': 'application/json',
-          'Content-Type': 'application/json',
+          'Content-Type': 'text/plain',  // Changed from application/json
         },
         body: JSON.stringify({
           ...formData,
@@ -141,10 +127,6 @@ export default function Register() {
           timestamp: new Date().toISOString(),
         }),
       });
-
-      if (!response.ok) {
-        throw new Error(`HTTP error! status: ${response.status}`);
-      }
 
       const result = await response.json();
 
@@ -165,7 +147,7 @@ export default function Register() {
       }
     } catch (error) {
       alert('Error submitting registration. Please try again or contact support.');
-      console.error('Submission error:', error);
+      console.error(error);
     } finally {
       setIsSubmitting(false);
     }
