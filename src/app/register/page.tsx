@@ -114,10 +114,25 @@ export default function Register() {
 
     setIsSubmitting(true);
 
+    const apiUrl = 'https://script.google.com/macros/s/AKfycbzmP7MdiPbket0S7LkNMRzgZJvBSQF6x5e5LbUGDaj1RgdarIT-CNy51zTXUbQ56ssV/exec';
+
     try {
-      const response = await fetch('YOUR_GOOGLE_SCRIPT_URL', {
-        method: 'POST',
+      // First, make a preflight OPTIONS request
+      await fetch(apiUrl, {
+        method: 'OPTIONS',
+        mode: 'cors',
         headers: {
+          'Accept': 'application/json',
+          'Content-Type': 'application/json',
+        },
+      });
+
+      // Then make the actual POST request
+      const response = await fetch(apiUrl, {
+        method: 'POST',
+        mode: 'cors',
+        headers: {
+          'Accept': 'application/json',
           'Content-Type': 'application/json',
         },
         body: JSON.stringify({
@@ -127,7 +142,13 @@ export default function Register() {
         }),
       });
 
-      if (response.ok) {
+      if (!response.ok) {
+        throw new Error(`HTTP error! status: ${response.status}`);
+      }
+
+      const result = await response.json();
+
+      if (result.success) {
         alert('Registration submitted successfully!');
         // Reset form
         setFormData({
@@ -140,11 +161,11 @@ export default function Register() {
         setDelegates([]);
         setShowDelegateForm(false);
       } else {
-        throw new Error('Submission failed');
+        throw new Error(result.error || 'Submission failed');
       }
     } catch (error) {
       alert('Error submitting registration. Please try again or contact support.');
-      console.error(error);
+      console.error('Submission error:', error);
     } finally {
       setIsSubmitting(false);
     }
@@ -380,6 +401,9 @@ export default function Register() {
                                         <SelectValue placeholder="Select grade" />
                                       </SelectTrigger>
                                       <SelectContent>
+                                        <SelectItem value="6">6th Grade</SelectItem>
+                                        <SelectItem value="7">7th Grade</SelectItem>
+                                        <SelectItem value="8">8th Grade</SelectItem>
                                         <SelectItem value="9">9th Grade</SelectItem>
                                         <SelectItem value="10">10th Grade</SelectItem>
                                         <SelectItem value="11">11th Grade</SelectItem>
