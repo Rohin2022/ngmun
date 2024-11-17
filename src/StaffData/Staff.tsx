@@ -60,7 +60,7 @@ const committees: CommitteeStaff[] = [
                 role: "Chair",
                 image: "https://res.cloudinary.com/veracross/image/upload/w_300,h_300,c_limit/v1731431415/nobles/person_photos/lmfnnq9esrdz3uqvubka.jpg",
                 committee: "UNESCO",
-                biography: ""
+                biography: "Seynabou is a Sophomore at Nobles and has been doing Model UN since 7th grade. Seynabou participated in NGMUN in her 8th grade year, and a multitude of conferences since. Seynabou can’t wait to be a Head Chair for NGMUN this year. Seynabou is so excited to see delegates debate complex topics, and strategize with one another on ways to reach a resolution! Apart from Model UN, Seynabou loves spending time in the city, as well as being with friends and family!"
             },
             {
                 name: "Mariame Diagana",
