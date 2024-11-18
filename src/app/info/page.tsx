@@ -16,7 +16,7 @@ export default function EventInfo() {
 
                 <div className="absolute inset-0">
                     <Image
-                        src="/registrationBg.jpg"
+                        src="/infoBg.jpg"
                         alt="Registration Background"
                         layout="fill"
                         objectFit="cover"

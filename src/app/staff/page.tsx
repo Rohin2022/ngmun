@@ -53,17 +53,17 @@ export default function Staff() {
 
     return (
         <main className="min-h-screen bg-gray-50 flex flex-col items-center justify-center">
-            {/* Hero Section remains the same */}
-            <div className="w-full h-[60vh] relative overflow-hidden flex items-center justify-center">
+            <div className="w-full h-[80vh] relative overflow-hidden flex items-center justify-center">
                 <div className="absolute inset-0 bg-blue-800/20 z-10"></div>
                 <div className="absolute inset-0 bg-black/20 z-20"></div>
 
                 <div className="absolute inset-0">
                     <Image
-                        src="/staff-background.jpg" // Add a suitable background image
+                        src="/staffBg.jpg"
                         alt="Staff Background"
                         layout="fill"
                         objectFit="cover"
+                        objectPosition="center 40%"
                         quality={100}
                         priority
                     />
@@ -82,11 +82,11 @@ export default function Staff() {
             </div>
 
             {/* Staff Content */}
-            <div className="md:px-0 max-w-3xl relative px-4 py-12 -mt-20 z-40">
+            <div className="md:px-0 max-w-3xl relative px-4 py-12 -mt-36 z-40">
                 <div className="max-w-7xl mx-auto">
                     {/* Leadership Section */}
                     <section className="mb-16">
-                        <Card className="p-8 backdrop-blur-sm bg-white/90 shadow-lg">
+                        <Card className="p-8 shadow-lg">
                             <h2 className="text-2xl font-bold text-center mb-8">
                                 Leadership Team
                             </h2>
