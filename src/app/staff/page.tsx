@@ -53,7 +53,7 @@ export default function Staff() {
 
     return (
         <main className="min-h-screen bg-gray-50 flex flex-col items-center justify-center">
-            <div className="w-full h-[80vh] relative overflow-hidden flex items-center justify-center">
+            <div className="w-full h-[60vh] relative overflow-hidden flex items-center justify-center">
                 <div className="absolute inset-0 bg-blue-800/20 z-10"></div>
                 <div className="absolute inset-0 bg-black/20 z-20"></div>
 
@@ -82,7 +82,7 @@ export default function Staff() {
             </div>
 
             {/* Staff Content */}
-            <div className="md:px-0 max-w-3xl relative px-4 py-12 -mt-36 z-40">
+            <div className="md:px-0 max-w-3xl relative px-4 py-12 z-40">
                 <div className="max-w-7xl mx-auto">
                     {/* Leadership Section */}
                     <section className="mb-16">

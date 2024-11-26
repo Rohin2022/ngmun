@@ -52,42 +52,24 @@ export default function EventInfo() {
                                     Dear Delegates and Advisors,
                                 </p>
                                 <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse id lectus
-                                    mattis, rhoncus nisi id, convallis nisi. Etiam eu maximus arcu. Donec varius dictum
-                                    egestas. Morbi sodales vel dolor a rutrum. Nunc scelerisque, lectus id pulvinar
-                                    tristique, dolor arcu pharetra tortor, non volutpat libero neque ac leo. Vestibulum
-                                    vitae diam luctus, gravida augue eu, placerat ligula. Nam vel accumsan nisi. Aenean
-                                    eu cursus augue, vel vestibulum dolor. Integer at leo rhoncus, suscipit nibh non,
-                                    dictum orci. Nam sollicitudin lobortis neque et egestas. Morbi nulla felis, vehicula
-                                    nec nunc a, tincidunt porta augue. Phasellus tincidunt in ipsum eget faucibus.
-                                    Aenean non pharetra odio. Maecenas hendrerit enim semper leo cursus mollis.
+                                    It is with great pleasure that we welcome you all to the seventh annual Noble and Greenough Model United Nations conference. This conference will take place on Sunday, May 4, 2025.
                                 </p>
                                 <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse id lectus
-                                    mattis, rhoncus nisi id, convallis nisi. Etiam eu maximus arcu. Donec varius dictum
-                                    egestas. Morbi sodales vel dolor a rutrum. Nunc scelerisque, lectus id pulvinar
-                                    tristique, dolor arcu pharetra tortor, non volutpat libero neque ac leo. Vestibulum
-                                    vitae diam luctus, gravida augue eu, placerat ligula. Nam vel accumsan nisi. Aenean
-                                    eu cursus augue, vel vestibulum dolor. Integer at leo rhoncus, suscipit nibh non,
-                                    dictum orci. Nam sollicitudin lobortis neque et egestas. Morbi nulla felis, vehicula
-                                    nec nunc a, tincidunt porta augue. Phasellus tincidunt in ipsum eget faucibus.
-                                    Aenean non pharetra odio. Maecenas hendrerit enim semper leo cursus mollis.
+                                    Our names are Benjamin Gelber and Alexander Yoon, and we’re both juniors at Nobles. We are thrilled to be serving as your co-secretaries general for this upcoming conference. We both started our involvement with Model United Nations during our freshman years in high school. After participating in many conferences, we jumped at the opportunity to serve in this new role and teach new delegates about Model UN.
                                 </p>
                                 <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse id lectus
-                                    mattis, rhoncus nisi id, convallis nisi. Etiam eu maximus arcu. Donec varius dictum
-                                    egestas. Morbi sodales vel dolor a rutrum. Nunc scelerisque, lectus id pulvinar
-                                    tristique, dolor arcu pharetra tortor, non volutpat libero neque ac leo. Vestibulum
-                                    vitae diam luctus, gravida augue eu, placerat ligula. Nam vel accumsan nisi. Aenean
-                                    eu cursus augue, vel vestibulum dolor. Integer at leo rhoncus, suscipit nibh non,
-                                    dictum orci. Nam sollicitudin lobortis neque et egestas. Morbi nulla felis, vehicula
-                                    nec nunc a, tincidunt porta augue. Phasellus tincidunt in ipsum eget faucibus.
-                                    Aenean non pharetra odio. Maecenas hendrerit enim semper leo cursus mollis.
+                                    Our hope is that this conference can teach delegates the skills they need to better prepare them for their roles as future leaders of our society. Students will deploy their skills in a realistic environment that addresses some of the most pressing real-world challenges today. Thus, our choice of committees aims to reflect a wide range of issues that require a multifaceted approach.
+                                </p>
+                                <p>
+                                    We would like to thank you all for your attendance and engagement at this conference. NGMUN VII relies on the active participation of bright delegates and advisors. If you have any questions, please don’t hesitate to contact us at ngmun@nobles.edu.
+                                </p>
+                                <p>
+                                    Once again, we are excited to welcome you to NGMUN VII! Until then, our secretariat will be hard at work preparing the best possible conference for all of you.
                                 </p>
                                 <p className="mt-4">
-                                    Best regards,<br/>
-                                    NAMES<br/>
-                                    Secretaries-General, NGMUN VII
+                                    Sincerely,<br/>
+                                    Alexander Yoon & Ben Gelber<br/>
+                                    Co-Secretaries General, NGMUN VII
                                 </p>
                             </div>
                         </div>
@@ -192,8 +174,8 @@ export default function EventInfo() {
                                 <h2 className="text-2xl font-bold text-black">Key Dates</h2>
                             </div>
                             <div className="space-y-3 text-gray-600">
-                                <p>April 14 — Position papers due via email to committee chairs (see the <Link className={"text-[#4A90E2] hover:underline"} href={"/committees"}>committees page</Link> for chair emails)</p>
-                                <p>April 21 — Conference Day</p>
+                                <p>April 27 — Position papers due via email to committee chairs (see the <Link className={"text-[#4A90E2] hover:underline"} href={"/committees"}>committees page</Link> for chair emails)</p>
+                                <p>May 4 — Conference Day</p>
                             </div>
                         </div>
                     </AnimateOnScroll>
@@ -206,7 +188,7 @@ export default function EventInfo() {
                                 <h2 className="text-2xl font-bold text-black">Pricing & Payment</h2>
                             </div>
                             <div className="space-y-4 text-gray-600">
-                                <p>The fee to attend NGMUN is $15/delegate. There is no delegation/school fee.</p>
+                                <p>The fee to attend NGMUN is $30/delegate. There is no delegation/school fee.</p>
                                 <p>
                                     Please mail checks to:<br/>
                                     ATTN: Business Office<br/>
