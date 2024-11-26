@@ -3,7 +3,11 @@ import Link from "next/link";
 import {Button} from "@/components/ui/button";
 import COMMITTEES from "@/StaffData/Committees";
 
-export default function CommitteeDetailPage({ params  }) {
+type CommitteeDetailParams = {
+    id: string;
+}
+
+export default function CommitteeDetailPage({ params }: { params: CommitteeDetailParams }) {
     const committee = COMMITTEES.find(c => c.id === params.id);
 
     if (!committee) {
