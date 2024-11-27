@@ -446,8 +446,7 @@ export default function Register() {
               </CardHeader>
               <CardContent>
                 <div className="space-y-4 text-sm text-gray-600">
-                  <p>• Registration fee is $50 per delegate</p>
-                  <p>• Early bird registration ends March 1, 2025</p>
+                  <p>• Registration fee is $30 per delegate</p>
                   <p>• Final registration deadline is April 15, 2025</p>
                   <p>
                     • Committee preferences will be collected after registration

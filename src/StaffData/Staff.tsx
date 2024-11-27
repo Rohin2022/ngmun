@@ -23,7 +23,7 @@ const leadershipTeam: StaffMember[] = [
         name: "Ben Gelber",
         role: "Secretary-General",
         image: "/BenProfile.jpg",
-        biography: ""
+        biography: "Ben is a junior at the Noble and Greenough school, and has been an active participant in Model UN since freshman year. Through Model UN, he enjoys strengthening his public speaking and communicational skills, and is excited to welcome delegates to improve their own abilities through engaging debates. Outside of Model UN, Ben participates in track and field, theater, and loves playing video games."
     },
     {
         name: "Chidubem Chukwu",
@@ -67,7 +67,7 @@ const committees: CommitteeStaff[] = [
                 role: "Co-Chair",
                 image: "https://res.cloudinary.com/veracross/image/upload/w_300,h_300,c_limit/v1731431424/nobles/person_photos/qkpigyocdzbgljx8o8l2.jpg",
                 committee: "UNESCO",
-                biography: ""
+                biography: "Mariame is a Junior at Noble and Greenough School who has been participating in Model UN since freshman year. Mariame is excited to chair the Middle School Committee and to further her love of Model UN through co-charing. In Mariame’s free time, she loves to study environmental sustainability and eating Shake Shack! "
             }
         ]
     },
@@ -79,7 +79,7 @@ const committees: CommitteeStaff[] = [
                 role: "Chair",
                 image: "https://res.cloudinary.com/veracross/image/upload/w_300,h_300,c_limit/v1731431399/nobles/person_photos/jdsc6vqgzpl3cmhoxpwi.jpg",
                 committee: "ECOFIN",
-                biography: ""
+                biography: "Eli is a senior at Nobles who has been doing MUN since Middle School. He enjoys the lively debate and intellectual discussion that come with Model UN, and he looks forward to seeing what delegates will bring this year. In his spare time, Eli likes to study history and go sailing."
             },
             {
                 name: "Ayaan Mohammed",
@@ -136,7 +136,7 @@ const committees: CommitteeStaff[] = [
                 role: "Chair",
                 image: "https://res.cloudinary.com/veracross/image/upload/w_300,h_300,c_limit/v1731431417/nobles/person_photos/myugxlq6rqxmbchikrux.jpg",
                 committee: "GMF",
-                biography: ""
+                biography: "Lauren is a current sophomore with 4 years of MUN experience, and she is thrilled to chair the Crisis Committee on the Great Molasses Flood of Boston. Outside of MUN, she is an avid trail runner who enjoys competing in cross country and track. A passionate enthusiast of politics and an avid reader, Lauren brings energy and excitement to learning about current events and international policy. She can't wait to delve into the fast-paced dynamics of this unique crisis and guide delegates through an engaging and memorable experience."
             },
             {
                 name: "Bella Bessa",
@@ -162,7 +162,7 @@ const committees: CommitteeStaff[] = [
                 role: "Co-Chair",
                 image: "https://res.cloudinary.com/veracross/image/upload/w_300,h_300,c_limit/v1731431436/nobles/person_photos/fz6ojh5gllva7y24trsz.jpg",
                 committee: "HG",
-                biography: ""
+                biography: "James Fair is a sophomore at Noble and Greenough school and began attending Model UN conferences in 7th grade. He is excited for a fun and lively committee, and lots of creativity from the delegates. Outside of Model UN he participates in debate, cross country and track and field."
             }
         ]
     }
@@ -173,13 +173,13 @@ const facultyAdvisors: StaffMember[] = [
         name: "Sheila McElwee",
         role: "Faculty Advisor",
         image: "https://res.cloudinary.com/veracross/image/upload/w_300,h_300,c_limit/v1731435517/nobles/person_photos/twyp131pzgcsxvsyhlhg.jpg",
-        biography: "Your biography text here.",
+        biography: "",
     },
     {
         name: "Amadou Seck",
         role: "Faculty Advisor",
         image: "https://res.cloudinary.com/veracross/image/upload/w_300,h_300,c_limit/v1731435513/nobles/person_photos/bcw3m30ua1komjqjbpo3.jpg",
-        biography: "Your biography text here.",
+        biography: "",
     },
 ];
 

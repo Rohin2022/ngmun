@@ -33,6 +33,13 @@ const COMMITTEES = [
         shortDescription: 'Navigating humanitarian challenges in a climate-changed future',
         image: '/committees/antarcticaBg.jpg',
         fullDescription: `Picture this: the year 2065, Antarctica becomes humanity's ultimate doomsday bunker. As climate disasters destroy coasts worldwide, people are flocking to the icy wilderness. Nations grapple with ethical and logistical challenges, from establishing sustainable settlements to protecting the fragile ecosystem.`
+    },
+    {
+        id: 'great-molasses-flood',
+        title: 'Great Molasses Flood',
+        shortDescription: 'Unraveling the aftermath of Boston\'s most viscous disaster',
+        image: '/committees/molassesBg.jpg',
+        fullDescription: 'The Great Molasses Flood crisis committee takes delegates to the aftermath of one of the most unusual disasters in American history. In January 1919, a massive storage tank burst in Boston\'s North End, unleashing a deadly wave of molasses that caused destruction, loss of life, and widespread chaos. Delegates will step into the roles of city officials, business leaders, and community representatives tasked with managing the fallout: rebuilding infrastructure, addressing public health concerns, and navigating legal and political ramifications. This committee challenges delegates to think critically and collaboratively in the face of a sticky crisis.'
     }
 ];
 

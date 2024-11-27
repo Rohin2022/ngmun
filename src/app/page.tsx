@@ -249,13 +249,13 @@ export default function Home() {
                                 className={`delay-${index * 200}`}
                             >
                                 <div className="text-center">
-                                    <div className="relative w-24 h-24 md:w-32 md:h-32 mx-auto">
+                                    <div
+                                        className="relative w-24 h-24 md:w-32 md:h-32 mx-auto overflow-hidden rounded-full">
                                         <Image
                                             src={profile.img}
                                             alt={profile.role}
-                                            width={160}
-                                            height={160}
-                                            className="rounded-full"
+                                            fill
+                                            className="object-cover"
                                         />
                                     </div>
                                     <h3 className="font-bold text-lg mb-1 text-black">
