@@ -174,7 +174,7 @@ export default function EventInfo() {
                                 <h2 className="text-2xl font-bold text-black">Key Dates</h2>
                             </div>
                             <div className="space-y-3 text-gray-600">
-                                <p>April 27 — Position papers due via email to committee chairs (see the <Link className={"text-[#4A90E2] hover:underline"} href={"/committees"}>committees page</Link> for chair emails)</p>
+                                <p>April 27 — Position papers due via email to committee chairs. See the <Link className={"text-[#4A90E2] hover:underline"} href={"/committees"}>committees page</Link> for chair emails, which will be posted with the background guides on Jan 17th</p>
                                 <p>May 4 — Conference Day</p>
                             </div>
                         </div>
