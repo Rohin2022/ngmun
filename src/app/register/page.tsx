@@ -448,10 +448,6 @@ export default function Register() {
                 <div className="space-y-4 text-sm text-gray-600">
                   <p>• Registration fee is $30 per delegate</p>
                   <p>• Final registration deadline is April 15, 2025</p>
-                  <p>
-                    • Committee preferences will be collected after registration
-                    confirmation
-                  </p>
                   <p className="pt-4">
                     For any additional questions, please contact{" "}
                     <Link
