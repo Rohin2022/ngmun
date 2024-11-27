@@ -15,8 +15,12 @@ export default function Staff() {
 
 
     // Staff member card component
+// Staff member card component
     const StaffMemberCard = ({member}: { member: StaffMember }) => {
         const [isExpanded, setIsExpanded] = useState(false);
+
+        // Only show biography and read more button if biography is not empty
+        const hasBiography = member.biography && member.biography.trim() !== '';
 
         return (
             <div className="flex flex-col items-center text-center">
@@ -26,27 +30,31 @@ export default function Staff() {
                         alt={member.name}
                         fill
                         className="rounded-full object-cover cursor-pointer transition-transform hover:scale-105"
-                        onClick={() => setIsExpanded(!isExpanded)}
+                        onClick={() => hasBiography && setIsExpanded(!isExpanded)}
                     />
                 </div>
                 <h3 className="font-bold text-lg text-gray-900">{member.name}</h3>
                 <p className="text-[#4A90E2] font-medium mb-2">{member.role}</p>
 
                 {/* Biography section */}
-                <div
-                    className={`transition-all duration-300 overflow-hidden ${
-                        isExpanded ? "max-h-[500px] opacity-100" : "max-h-0 opacity-0"
-                    }`}
-                >
-                    <p className="text-gray-600 text-sm mt-2 px-4">{member.biography}</p>
-                </div>
+                {hasBiography && (
+                    <>
+                        <div
+                            className={`transition-all duration-300 overflow-hidden ${
+                                isExpanded ? "max-h-[500px] opacity-100" : "max-h-0 opacity-0"
+                            }`}
+                        >
+                            <p className="text-gray-600 text-sm mt-2 px-4">{member.biography}</p>
+                        </div>
 
-                <button
-                    onClick={() => setIsExpanded(!isExpanded)}
-                    className="mt-2 text-blue-600 hover:text-blue-800 text-sm font-medium"
-                >
-                    {isExpanded ? "Show Less" : "Read Bio"}
-                </button>
+                        <button
+                            onClick={() => setIsExpanded(!isExpanded)}
+                            className="mt-2 text-blue-600 hover:text-blue-800 text-sm font-medium"
+                        >
+                            {isExpanded ? "Show Less" : "Read Bio"}
+                        </button>
+                    </>
+                )}
             </div>
         );
     };

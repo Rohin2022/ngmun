@@ -47,6 +47,11 @@ export default function CommitteeDetailPage({ params }: { params: CommitteeDetai
                 <div className="bg-white shadow-lg rounded-3xl p-8">
                     <h2 className="text-2xl font-bold mb-6 text-black">Committee Overview</h2>
                     <div className="text-gray-600 space-y-4">
+                        <div className="bg-yellow-50 border-l-4 border-yellow-500 p-4 mb-4">
+                            <p className="text-yellow-700 font-medium">
+                                🔔 Note: Background guides will be posted on January 17th by 9pm EST. Your advisor will also receive an email from ngmun@nobles.edu with instructions on how to access them.
+                            </p>
+                        </div>
                         <p>{committee.fullDescription}</p>
                         {/* You can add more sections like background, topics, etc. */}
                     </div>
