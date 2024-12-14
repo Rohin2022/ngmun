@@ -7,6 +7,11 @@ import Link from "next/link";
 import { useState, useEffect } from "react";
 import { usePathname } from "next/navigation";
 import SidebarDrawer from "./SidebarDrawer";
+//import getConfig from "next/config";
+
+//const { publicRuntimeConfig } = getConfig();
+//const basePath = publicRuntimeConfig?.basePath || "";
+const basePath = '/ngmun';
 
 export default function Navbar() {
   const pathname = usePathname();
@@ -47,7 +52,7 @@ export default function Navbar() {
               <Link href="/" className="flex gap-2 h-full items-center">
                 <Image
                   unoptimized
-                  src="/debateMUN.png"
+                  src={`${basePath}/debateMUN.png`}
                   alt="Logo"
                   width={40}
                   height={40}

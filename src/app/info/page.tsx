@@ -5,6 +5,7 @@ import {AnimateOnScroll} from "@/lib/ScrollUtils";
 import Link from "next/link";
 import {Clock, Mail, MapPin, DollarSign, Calendar} from "lucide-react";
 import Image from "next/image";
+const basePath = process.env.NEXT_PUBLIC_BASE_PATH || "";
 
 export default function EventInfo() {
     return (
@@ -16,7 +17,7 @@ export default function EventInfo() {
 
                 <div className="absolute inset-0">
                     <Image
-                        src="/infoBg.jpg"
+                        src={`${basePath}/infoBg.jpg`}
                         alt="Registration Background"
                         layout="fill"
                         objectFit="cover"

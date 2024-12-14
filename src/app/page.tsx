@@ -10,6 +10,14 @@ import {
 import {useEffect, useState} from "react";
 import Link from "next/link";
 import {useScrollAnimation, AnimateOnScroll} from "@/lib/ScrollUtils";
+//import getConfig from "next/config";
+
+//const { publicRuntimeConfig } = getConfig();
+//const basePath = publicRuntimeConfig?.basePath || "";
+const basePath = process.env.NEXT_PUBLIC_BASE_PATH || "";
+
+
+
 
 export default function Home() {
     const [hasScrolled, setHasScrolled] = useState(false);
@@ -38,7 +46,7 @@ export default function Home() {
                 >
                     <div className="relative w-full h-full">
                         <Image
-                            src="/background.jpeg"
+                            src={`${basePath}/background.jpeg`}
                             alt="Background"
                             layout="fill"
                             objectFit="cover"
@@ -47,7 +55,7 @@ export default function Home() {
                             className="hidden sm:block"
                         />
                         <Image
-                            src="/backgroundTall.jpg"
+                            src={`${basePath}/backgroundTall.jpg`}
                             alt="Background"
                             layout="fill"
                             objectFit="cover"
@@ -61,7 +69,7 @@ export default function Home() {
                 <div className="relative z-30 text-center px-4 md:px-0 max-w-3xl xl:-mt-80 -mt-48">
                     <h1 className="text-white font-bold mb-4">
             <span className="block text-md font-medium animate-fade-in-up">
-              THE SEVENTH SESSION
+              THE SEVENTH SESSION 
             </span>
                         <span className="block text-3xl md:text-4xl lg:text-5xl xl:text-6xl mb-2 animate-fade-in-down">
               Noble and Greenough
@@ -227,21 +235,21 @@ export default function Home() {
                                 role: "Secretary General",
                                 description:
                                     "Ben is a Junior at the Noble and Greenough School",
-                                img: "/BenProfile.jpg",
+                                    img: `${basePath}/BenProfile.jpg`,
                             },
                             {
                                 name: "Alex Yoon",
                                 role: "Secretary General",
                                 description:
                                     "Alex is a Junior at the Noble and Greenough School",
-                                img: "/AlexProfile.jpg",
+                                img: `${basePath}/AlexProfile.jpg`,
                             },
                             {
                                 name: "Chidubem Chukwu",
                                 role: "Undersecretary General",
                                 description:
                                     "Chidubem is a Senior at the Noble and Greenough School",
-                                img: "/ChidProfile.jpg",
+                                img: `${basePath}/ChidProfile.jpg`,
                             },
                         ].map((profile, index) => (
                             <AnimateOnScroll

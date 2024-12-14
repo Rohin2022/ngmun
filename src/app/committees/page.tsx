@@ -4,6 +4,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { AnimateOnScroll } from "@/lib/ScrollUtils";
 import COMMITTEES from "@/StaffData/Committees";
+const basePath = process.env.NEXT_PUBLIC_BASE_PATH || "";
 
 export default function CommitteesPage() {
     return (
@@ -15,7 +16,7 @@ export default function CommitteesPage() {
 
                 <div className="absolute inset-0">
                     <Image
-                        src="/committeesBg.jpg"
+                        src={`${basePath}/committeesBg.jpg`}
                         alt="Committees Background"
                         layout="fill"
                         objectFit="cover"
@@ -48,7 +49,7 @@ export default function CommitteesPage() {
                                 <div className="bg-white shadow-lg rounded-xl overflow-hidden transition-all duration-300 group-hover:shadow-lg group-hover:scale-105 h-full flex flex-col cursor-pointer">
                                     <div className="relative h-48 w-full">
                                         <Image
-                                            src={committee.image}
+                                            src={`${basePath}/${committee.image}`}
                                             alt={committee.title}
                                             fill
                                             sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"

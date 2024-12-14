@@ -1,4 +1,5 @@
 "use client";
+const basePath = process.env.NEXT_PUBLIC_BASE_PATH || "";
 
 import { Button } from "@/components/ui/button";
 import {
@@ -186,7 +187,7 @@ export default function Register() {
 
           <div className="absolute inset-0">
             <Image
-                src="/registrationBg.jpg"
+                src={`${basePath}/registrationBg.jpg`}
                 alt="Registration Background"
                 layout="fill"
                 objectFit="cover"

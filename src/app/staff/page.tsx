@@ -5,6 +5,7 @@ import Image from "next/image";
 import {useEffect, useState} from "react";
 import {leadershipTeam, committees, facultyAdvisors, StaffMember, CommitteeStaff} from "@/StaffData/Staff";
 import {AnimateOnScroll} from "@/lib/ScrollUtils";
+const basePath = process.env.NEXT_PUBLIC_BASE_PATH || "";
 
 export default function Staff() {
     const [mounted, setMounted] = useState(false);
@@ -15,18 +16,24 @@ export default function Staff() {
 
 
     // Staff member card component
-// Staff member card component
+    const getImageSrc = (image: string): string => {
+        if (image.startsWith("http")) {
+            return image; // External URL
+        }
+        return `${basePath}${image}`; // Local path with basePath prepended
+    };
+    // Staff member card component
     const StaffMemberCard = ({member}: { member: StaffMember }) => {
         const [isExpanded, setIsExpanded] = useState(false);
 
         // Only show biography and read more button if biography is not empty
         const hasBiography = member.biography && member.biography.trim() !== '';
-
+         
         return (
             <div className="flex flex-col items-center text-center">
                 <div className="relative w-32 h-32 mb-4">
                     <Image
-                        src={member.image}
+                        src={getImageSrc(member.image)}
                         alt={member.name}
                         fill
                         className="rounded-full object-cover cursor-pointer transition-transform hover:scale-105"
@@ -67,7 +74,7 @@ export default function Staff() {
 
                 <div className="absolute inset-0">
                     <Image
-                        src="/staffBg.jpg"
+                         src={`${basePath}/staffBg.jpg`}
                         alt="Staff Background"
                         layout="fill"
                         objectFit="cover"
