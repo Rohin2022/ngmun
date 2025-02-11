@@ -94,7 +94,7 @@ const committees: CommitteeStaff[] = [
         name: "Commission of Crime Prevention and Criminal Justice",
         chairs: [
             {
-                name: "Arthi vithiananthan",
+                name: "Arthi Vithiananthan",
                 role: "Chair",
                 image: "https://res.cloudinary.com/veracross/image/upload/w_300,h_300,c_limit/v1731431417/nobles/person_photos/xwbk8qhbyw0qaltkc8nt.jpg",
                 committee: "CCPCJ",
@@ -120,9 +120,9 @@ const committees: CommitteeStaff[] = [
                 biography: "Kate is a sophomore at the Noble and Greenough School, and she has been involved in Model UN since 8th grade. She is thrilled to be Chairing the crisis committee on Minions. Aside from Model UN, she enjoys throwing the discus in track and field, wrestling during the winter, and also writing poetry. More importantly, she hopes that every delegate has fun and comes out learning something new. She looks forward to meeting everyone!"
             },
             {
-                name: "Kai Neal",
+                name: "Lara Sahagun",
                 role: "Co-Chair",
-                image: "https://res.cloudinary.com/veracross/image/upload/w_300,h_300,c_limit/v1731431398/nobles/person_photos/ypm45ddjwugeo3vfynnp.jpg",
+                image: "https://res.cloudinary.com/veracross/image/upload/w_300,h_300,c_limit/v1731431426/nobles/person_photos/tuz5k507ulctllgznbhu.jpg",
                 committee: "ARC",
                 biography: ""
             }
