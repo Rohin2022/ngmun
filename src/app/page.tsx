@@ -235,21 +235,21 @@ export default function Home() {
                                 role: "Secretary General",
                                 description:
                                     "Ben is a Junior at the Noble and Greenough School",
-                                    img: `${basePath}/BenProfile.jpg`,
+                                    img: `${basePath}/profiles/Benjamin_Gelber.jpg`,
                             },
                             {
                                 name: "Alex Yoon",
                                 role: "Secretary General",
                                 description:
                                     "Alex is a Junior at the Noble and Greenough School",
-                                img: `${basePath}/AlexProfile.jpg`,
+                                img: `${basePath}/profiles/Alexander_Yoon.jpg`,
                             },
                             {
                                 name: "Chidubem Chukwu",
                                 role: "Undersecretary General",
                                 description:
                                     "Chidubem is a Senior at the Noble and Greenough School",
-                                img: `${basePath}/ChidProfile.jpg`,
+                                img: `${basePath}/profiles/Chidubem_Chukwu.jpg`,
                             },
                         ].map((profile, index) => (
                             <AnimateOnScroll
