@@ -211,257 +211,28 @@ export default function Register() {
         {/* Registration Form Section */}
         <div className="relative z-40 py-12 px-4 md:px-0 max-w-3xl">
           <div className="max-w-3xl mx-auto">
-            <Card className="backdrop-blur-sm bg-white/90 shadow-lg">
-              <CardHeader>
-                <CardTitle>Conference Registration</CardTitle>
-                <CardDescription>
-                  Please fill out all required information for your delegation.
-                  For any questions, please contact{" "}
-                  <Link
-                      href="mailto:ngmun@nobles.edu"
-                      className="text-[#4A90E2] hover:underline"
-                  >
-                    ngmun@nobles.edu
-                  </Link>
-                </CardDescription>
-              </CardHeader>
-              <CardContent>
-                <form onSubmit={handleSubmit} className="space-y-6">
-                  {/* School Information */}
-                  <div className="space-y-4">
-                    <h3 className="text-lg font-semibold text-gray-900">
-                      School Information
-                    </h3>
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                      <div className="space-y-2">
-                        <label className="text-sm font-medium text-gray-700">
-                          School Name*
-                        </label>
-                        <Input
-                            placeholder="Enter school name"
-                            className="w-full"
-                            required
-                            value={formData.schoolName}
-                            onChange={(e) =>
-                                setFormData({
-                                  ...formData,
-                                  schoolName: e.target.value,
-                                })
-                            }
-                        />
-                      </div>
-                      <div className="space-y-2">
-                        <label className="text-sm font-medium text-gray-700">
-                          Delegation Size*
-                        </label>
-                        <Select onValueChange={handleDelegationSizeChange} required>
-                          <SelectTrigger>
-                            <SelectValue placeholder="Select size" />
-                          </SelectTrigger>
-                          <SelectContent>
-                            <SelectItem value="small">1-5 delegates</SelectItem>
-                            <SelectItem value="medium">6-10 delegates</SelectItem>
-                            <SelectItem value="large">11-15 delegates</SelectItem>
-                            <SelectItem value="xlarge">16+ delegates</SelectItem>
-                          </SelectContent>
-                        </Select>
-                      </div>
-                    </div>
-                  </div>
-
-                  <Separator />
-
-                  {/* Advisor Information */}
-                  <div className="space-y-4">
-                    <h3 className="text-lg font-semibold text-gray-900">
-                      Faculty Advisor Information
-                    </h3>
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                      <div className="space-y-2">
-                        <label className="text-sm font-medium text-gray-700">
-                          Advisor Name*
-                        </label>
-                        <Input
-                            placeholder="Enter advisor name"
-                            className="w-full"
-                            required
-                            value={formData.advisorName}
-                            onChange={(e) =>
-                                setFormData({
-                                  ...formData,
-                                  advisorName: e.target.value,
-                                })
-                            }
-                        />
-                      </div>
-                      <div className="space-y-2">
-                        <label className="text-sm font-medium text-gray-700">
-                          Advisor Email*
-                        </label>
-                        <Input
-                            type="email"
-                            placeholder="advisor@school.edu"
-                            className="w-full"
-                            required
-                            value={formData.advisorEmail}
-                            onChange={(e) =>
-                                setFormData({
-                                  ...formData,
-                                  advisorEmail: e.target.value,
-                                })
-                            }
-                        />
-                      </div>
-                      <div className="space-y-2">
-                        <label className="text-sm font-medium text-gray-700">
-                          Advisor Phone*
-                        </label>
-                        <Input
-                            type="tel"
-                            placeholder="(123) 456-7890"
-                            className="w-full"
-                            required
-                            value={formData.advisorPhone}
-                            onChange={(e) =>
-                                setFormData({
-                                  ...formData,
-                                  advisorPhone: e.target.value,
-                                })
-                            }
-                        />
-                      </div>
-                    </div>
-                  </div>
-
-                  {/* Delegate Information */}
-                  {showDelegateForm && (
-                      <>
-                        <Separator />
-                        <div className="space-y-6">
-                          <h3 className="text-lg font-semibold text-gray-900">
-                            Delegate Information
-                          </h3>
-                          {delegates.map((delegate, index) => (
-                              <Card key={index} className="p-4 relative">
-                                <div className="flex w-full justify-between items-center mb-6">
-                                  <h4 className="font-medium">
-                                    Delegate {index + 1}
-                                  </h4>
-                                  <Button
-                                      variant="ghost"
-                                      size="icon"
-                                      onClick={() => removeDelegate(index)}
-                                      className="absolute top-2 right-2 hover:bg-red-50"
-                                  >
-                                    <X className="h-5 w-5 text-red-500" />
-                                  </Button>
-                                </div>
-                                <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-                                  <div className="space-y-2">
-                                    <label className="text-sm font-medium text-gray-700">
-                                      Name*
-                                    </label>
-                                    <Input
-                                        placeholder="Delegate name"
-                                        value={delegate.name}
-                                        required
-                                        onChange={(e) =>
-                                            updateDelegate(index, "name", e.target.value)
-                                        }
-                                    />
-                                  </div>
-                                  <div className="space-y-2">
-                                    <label className="text-sm font-medium text-gray-700">
-                                      Grade*
-                                    </label>
-                                    <Select
-                                        required
-                                        onValueChange={(value) =>
-                                            updateDelegate(index, "grade", value)
-                                        }
-                                    >
-                                      <SelectTrigger>
-                                        <SelectValue placeholder="Select grade" />
-                                      </SelectTrigger>
-                                      <SelectContent>
-                                        <SelectItem value="6">6th Grade</SelectItem>
-                                        <SelectItem value="7">7th Grade</SelectItem>
-                                        <SelectItem value="8">8th Grade</SelectItem>
-                                        <SelectItem value="9">9th Grade</SelectItem>
-                                        <SelectItem value="10">10th Grade</SelectItem>
-                                        <SelectItem value="11">11th Grade</SelectItem>
-                                        <SelectItem value="12">12th Grade</SelectItem>
-                                      </SelectContent>
-                                    </Select>
-                                  </div>
-                                  <div className="space-y-2">
-                                    <label className="text-sm font-medium text-gray-700">
-                                      Experience Level*
-                                    </label>
-                                    <Select
-                                        required
-                                        onValueChange={(value) =>
-                                            updateDelegate(index, "experience", value)
-                                        }
-                                    >
-                                      <SelectTrigger>
-                                        <SelectValue placeholder="Select experience" />
-                                      </SelectTrigger>
-                                      <SelectContent>
-                                        <SelectItem value="novice">
-                                          Novice (0-1 conferences)
-                                        </SelectItem>
-                                        <SelectItem value="intermediate">
-                                          Intermediate (2-4 conferences)
-                                        </SelectItem>
-                                        <SelectItem value="advanced">
-                                          Advanced (5+ conferences)
-                                        </SelectItem>
-                                      </SelectContent>
-                                    </Select>
-                                  </div>
-                                </div>
-                              </Card>
-                          ))}
-                        </div>
-                      </>
-                  )}
-
-                  <div className="pt-6">
-                    <Button
-                        type="submit"
-                        className="w-full bg-[#4A90E2] hover:bg-[#357ABD] text-white transition-colors duration-200"
-                        disabled={isSubmitting}
-                    >
-                      {isSubmitting ? "Submitting..." : "Submit Registration"}
-                    </Button>
-                  </div>
-                </form>
-              </CardContent>
-            </Card>
-
             {/* Additional Information Card */}
-            <Card className="mt-6 backdrop-blur-sm bg-white/90 shadow-lg">
+            <Card className="mt-6 backdrop-blur-sm bg-white/90 shadow-lg text-center">
               <CardHeader>
-                <CardTitle>Important Information</CardTitle>
+                <CardTitle>Registration Closed</CardTitle>
               </CardHeader>
-              <CardContent>
-                <div className="space-y-4 text-sm text-gray-600">
-                  <p>• Registration fee is $30 per delegate</p>
-                  <p>• Final registration deadline is April 15, 2025</p>
-                  <p className="pt-4">
-                    For any additional questions, please contact{" "}
+              <CardContent className={"pt-0"}>
+                <div className="space-y-4 text-gray-700 text-center">
+                  <p className="pt-0">
+                      We’re sorry! Registration for NGMUN VII is now closed.
+                      If you have any questions, please contact{" "}
                     <Link
                         href="mailto:ngmun@nobles.edu"
                         className="text-[#4A90E2] hover:underline"
-                    >
-                      ngmun@nobles.edu
+                    >ngmun@nobles.edu
                     </Link>
                   </p>
                 </div>
               </CardContent>
             </Card>
           </div>
+        </div>
+        <div className="pt-20">
         </div>
       </main>
   );
