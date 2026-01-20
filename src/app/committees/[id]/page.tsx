@@ -57,11 +57,11 @@ export default function CommitteeDetailPage({
             Committee Overview
           </h2>
           <div className="text-gray-600 space-y-4">
-            <div className="bg-yellow-50 border-l-4 border-yellow-500 p-4 mb-4">
+            {/* <div className="bg-yellow-50 border-l-4 border-yellow-500 p-4 mb-4">
               <p className="text-yellow-700 font-medium">
                 🔔 We apologize for the delays with releasing background guides. You should now be able to access them with the link below.
               </p>
-            </div>
+            </div> */}
             {/* Added Background Guide Link */}
             <div className="mt-6">
               <a

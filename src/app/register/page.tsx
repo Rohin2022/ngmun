@@ -199,7 +199,7 @@ export default function Register() {
           <div className="relative z-30 text-center px-4">
             <h1 className="text-white font-bold mb-4">
             <span className="block text-3xl md:text-4xl lg:text-5xl mb-2 animate-fade-in-down">
-              Register for NGMUN VII
+              Register for NGMUN VIII
             </span>
             </h1>
             <p className="text-white text-base md:text-lg animate-fade-in">
@@ -219,7 +219,7 @@ export default function Register() {
               <CardContent className={"pt-0"}>
                 <div className="space-y-4 text-gray-700 text-center">
                   <p className="pt-0">
-                      We’re sorry! Registration for NGMUN VII is now closed.
+                      We’re sorry! Registration for NGMUN VIII is now closed.
                       If you have any questions, please contact{" "}
                     <Link
                         href="mailto:ngmun@nobles.edu"

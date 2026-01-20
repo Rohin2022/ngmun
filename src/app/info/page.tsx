@@ -33,7 +33,7 @@ export default function EventInfo() {
             </span>
           </h1>
           <p className="text-white text-base md:text-lg animate-fade-in">
-            Everything you need to know about NGMUN VII
+            Everything you need to know about NGMUN VIII
           </p>
         </div>
       </div>
@@ -50,47 +50,35 @@ export default function EventInfo() {
               <div className="text-gray-600 space-y-4">
                 <p>Dear Delegates and Advisors,</p>
                 <p>
-                  It is with great pleasure that we welcome you all to the
-                  seventh annual Noble and Greenough Model United Nations
-                  conference. This conference will take place on Sunday, May 4,
-                  2025.
+                  It is with great pleasure that we welcome you all to the eighth annual Noble and Greenough Model United Nations conference.
+                  This conference will take place on Sunday, May 3, 2026.
                 </p>
                 <p>
-                  Our names are Benjamin Gelber and Alexander Yoon, and we’re
-                  both juniors at Nobles. We are thrilled to be serving as your
-                  co-secretaries general for this upcoming conference. We both
-                  started our involvement with Model United Nations during our
-                  freshman years in high school. After participating in many
-                  conferences, we jumped at the opportunity to serve in this new
-                  role and teach new delegates about Model UN.
+                  Our names are Benjamin Gelber and Alexander Yoon, and we’re both seniors at Nobles.
+                  We are thrilled to be serving as your co-secretaries general for this upcoming conference.
+                  We both started our involvement with Model United Nations during our freshman years in high school.
+                  After serving as the co-secretaries general for last year’s conference, we’re excited to take what we’ve learned to host another successful conference.
                 </p>
                 <p>
-                  Our hope is that this conference can teach delegates the
-                  skills they need to better prepare them for their roles as
-                  future leaders of our society. Students will deploy their
-                  skills in a realistic environment that addresses some of the
-                  most pressing real-world challenges today. Thus, our choice of
-                  committees aims to reflect a wide range of issues that require
-                  a multifaceted approach.
+                  Our hope is that this conference can teach delegates the skills they need to better prepare them for their roles as future leaders of our society.
+                  Students will deploy their skills in a realistic environment that addresses some of the most pressing real-world challenges today.
+                  Thus, our choice of committees aims to reflect a wide range of issues that require a multifaceted approach.
                 </p>
                 <p>
-                  We would like to thank you all for your attendance and
-                  engagement at this conference. NGMUN VII relies on the active
-                  participation of bright delegates and advisors. If you have
-                  any questions, please don’t hesitate to contact us at
-                  ngmun@nobles.edu.
+                  We would like to thank you all for your attendance and engagement at this conference.
+                  NGMUN VIII relies on the active participation of bright delegates and advisors.
+                  If you have any questions, please don’t hesitate to contact us at ngmun@nobles.edu.
                 </p>
                 <p>
-                  Once again, we are excited to welcome you to NGMUN VII! Until
-                  then, our secretariat will be hard at work preparing the best
-                  possible conference for all of you.
+                  Once again, we are excited to welcome you to NGMUN VIII!
+                  Until then, our secretariat will be hard at work preparing the best possible conference for all of you.
                 </p>
                 <p className="mt-4">
                   Sincerely,
                   <br />
-                  Alexander Yoon & Ben Gelber
+                  Alexander Yoon & Benjamin Gelber
                   <br />
-                  Co-Secretaries General, NGMUN VII
+                  Co-Secretaries General, NGMUN VIII
                 </p>
               </div>
             </div>
@@ -201,7 +189,7 @@ export default function EventInfo() {
               </div>
               <div className="space-y-3 text-gray-600">
                 <p>
-                  April 27 — Position papers due via email to committee chairs.
+                  April 26 — Position papers due via email to committee chairs.
                   See the{" "}
                   <Link
                     className={"text-[#4A90E2] hover:underline"}
@@ -209,10 +197,9 @@ export default function EventInfo() {
                   >
                     committees page
                   </Link>{" "}
-                  for chair emails, which will be posted with the background
-                  guides on Jan 17th
+                  for chair emails and the background.
                 </p>
-                <p>May 4 — Conference Day</p>
+                <p>May 3 — Conference Day</p>
               </div>
             </div>
           </AnimateOnScroll>
@@ -228,7 +215,7 @@ export default function EventInfo() {
               </div>
               <div className="space-y-4 text-gray-600">
                 <p>
-                  The registration fee for NGMUN is $30 per delegate. There is
+                  The registration fee for NGMUN is $40 per delegate. There is
                   no additional delegation or school fee.
                 </p>
 

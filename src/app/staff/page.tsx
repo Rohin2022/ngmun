@@ -91,7 +91,7 @@ export default function Staff() {
             </span>
                     </h1>
                     <p className="text-white text-base md:text-lg animate-fade-in">
-                        The dedicated staff behind NGMUN VII
+                        The dedicated staff behind NGMUN VIII
                     </p>
                 </div>
             </div>

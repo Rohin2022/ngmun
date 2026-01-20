@@ -69,16 +69,16 @@ export default function Home() {
                 <div className="relative z-30 text-center px-4 md:px-0 max-w-3xl xl:-mt-80 -mt-48">
                     <h1 className="text-white font-bold mb-4">
             <span className="block text-md font-medium animate-fade-in-up">
-              THE SEVENTH SESSION 
+              THE EIGHTH SESSION 
             </span>
                         <span className="block text-3xl md:text-4xl lg:text-5xl xl:text-6xl mb-2 animate-fade-in-down">
               Noble and Greenough
-              <br/> Model UN VII
+              <br/> Model UN VIII
             </span>
                     </h1>
 
                     <p className="text-white text-base md:text-lg mb-8 max-w-xl mx-auto animate-fade-in">
-                        Sunday, May 4, 2025
+                        Sunday, May 3, 2026
                     </p>
                     <Link href="/register">
                         <Button
@@ -106,7 +106,7 @@ export default function Home() {
                     <AnimateOnScroll>
                         <div className="text-center mb-12">
                             <h2 className="text-2xl md:text-3xl font-bold mb-3 text-black">
-                                Welcome to NGMUN VII
+                                Welcome to NGMUN VIII
                             </h2>
                             <p className="text-gray-600 text-sm md:text-base max-w-2xl mx-auto">
                                 NGMUN is a one-day high school Model UN conference dedicated to
@@ -234,23 +234,30 @@ export default function Home() {
                                 name: "Ben Gelber",
                                 role: "Secretary General",
                                 description:
-                                    "Ben is a Junior at the Noble and Greenough School",
+                                    "Ben is a Senior at the Noble and Greenough School",
                                     img: `${basePath}/profiles/Benjamin_Gelber.jpg`,
                             },
                             {
                                 name: "Alex Yoon",
                                 role: "Secretary General",
                                 description:
-                                    "Alex is a Junior at the Noble and Greenough School",
+                                    "Alex is a Senior at the Noble and Greenough School",
                                 img: `${basePath}/profiles/Alexander_Yoon.jpg`,
                             },
                             {
-                                name: "Chidubem Chukwu",
+                                name: "Seynabou Seck",
                                 role: "Undersecretary General",
                                 description:
-                                    "Chidubem is a Senior at the Noble and Greenough School",
-                                img: `${basePath}/profiles/Chidubem_Chukwu.jpg`,
+                                    "Seynabou is a Junior at the Noble and Greenough School",
+                                img: `${basePath}/profiles/Seynabou_Seck.jpg`,
                             },
+                            {
+                                name: "Camilla Mangal",
+                                role: "Undersecretary General",
+                                description:
+                                    "Camilla is a Junior at the Noble and Greenough School",
+                                img: `${basePath}/profiles/Camilla_Mangal.jpg`,
+                            }
                         ].map((profile, index) => (
                             <AnimateOnScroll
                                 key={profile.name}

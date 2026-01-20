@@ -1,57 +1,57 @@
 const COMMITTEES = [
     {
-        id: 'hunger-games',
-        title: 'Hunger Games Crisis',
-        shortDescription: 'Addressing the aftermath of the Second Rebellion in Panem',
-        image: '/committees/hungergamesBg.jpg', // Assume you have corresponding images
-        fullDescription: `The Hunger Games Crisis Committee focuses on the aftermath of the Second Rebellion in Panem, mainly dealing with the fate of the citizens after the uprising. Delegates in this committee will seek to address several complications resulting from the rebellion, all of which will play a key role in determining whether Panem becomes a republic or devolves into a dictatorship once again.`,
-        backgroundGuideUrl: `https://drive.google.com/file/d/1g7GJ_sxxjJYdOE-2kW7h_DngIqeCko-K/view?usp=drive_link`,
-        emailContact: 'thanumolu26@nobles.edu'
+        id: 'interplanetary-expansion',
+        title: 'Interplanetary Expansion',
+        shortDescription: 'shortDescription of Interplanetary Expansion Committee',
+        image: '/committees/interplanetaryBg.jpg', // Assume you have corresponding images
+        fullDescription: `fullDescription of Interplanetary Expansion Committee goes here.`,
+        backgroundGuideUrl: `https://drive.google.com/file/d/1MCYRd2CCfYeGRecqT68LinP7b08d7IT0/view?usp=sharing`,
+        emailContact: 'amohammed27@nobles.edu'
     },
     {
-        id: 'unhrc-drones',
-        title: 'UNHRC Drones in Warfare',
-        shortDescription: 'Developing international guidelines for AI in military technology',
-        image: '/committees/droneBg.jpg',
-        fullDescription: `As new technology emerges, adaption to warfare for the latest tech is crucial. Often, these modifications can upend existing military paradigms or violate the rules of war. Delegates in this committee will be tasked with critically addressing the pressing issue of AI in the military and working to develop and debate international guidelines that ultimately promote global peace.`,
-        backgroundGuideUrl: `https://drive.google.com/file/d/1xy2iRffMLuc0hTlm8wyO-YMNEYtZhZT7/view?usp=drive_link`,
-        emailContact: 'eschotland25@nobles.edu'
+        id: 'prohibition',
+        title: 'Prohibition',
+        shortDescription: 'shortDescription of Prohibition Committee',
+        image: '/committees/prohibitionBg.jpg',
+        fullDescription: `The St. Valentine’s Day Massacre Crisis Committee is centered around the response to the event itself and the surrounding ideas of prohibition and organized crime. In this committee, delegates will represent gangsters, government officials, and local leaders, addressing the immediate crisis while navigating political agendas and alliances.`,
+        backgroundGuideUrl: `https://drive.google.com/file/d/1Olas-y0_y3_Nff4OGHODbQU8SSQJM0LJ/view?usp=sharing`,
+        emailContact: 'jfair27@nobles.edu'
     },
     {
-        id: 'unesco-animal-testing',
-        title: 'UNESCO Animal Testing',
-        shortDescription: 'Debating the ethical considerations of animal testing',
-        image: '/committees/animalBg.webp',
-        fullDescription: `The United Nations Educational, Scientific, and Cultural Organization is a specialized agency responsible for overseeing many situations regarding education, science, culture, and communication. In this committee, delegates will be responsible for debating the subject of animal testing and how to address this matter.`,
-        backgroundGuideUrl: `https://drive.google.com/file/d/1j1GlcAxXlt7wnRHr_QEIpNuy5o2rkmnC/view?usp=drive_link`,
-        emailContact: 'sseck27@nobles.edu'
+        id: 'marvel-sokovia-accords',
+        title: 'The Marvel Sokovia Accords',
+        shortDescription: 'shortDescription of Marvel Sokovia Accords Committee',
+        image: '/committees/sokoviaBg.jpg',
+        fullDescription: `Set between Avengers: Age of Ultron and Captain America: Civil War, the aftermath of the battle of Sokovia has the world demanding accountability for superhuman power. Now introduced to the UN, the Sokovia Accords proposes placing enhanced individuals under international oversight, but potentially at the cost of autonomy and moral judgement. This committee will confront the central question: who controls the Avengers when the fate of the world is at stake? Choose regulation or resistance – Ironman or Captain America’s side – because indecision may be the most dangerous of them all.`,
+        backgroundGuideUrl: `https://drive.google.com/file/d/1lXHzU37Zi7i8XVrdBEycvMra70YI15Qt/view?usp=sharing`,
+        emailContact: 'lpeloquin27@nobles.edu '
     },
     {
-        id: 'ccpcj-juvenile-justice',
-        title: 'CCPCJ: Juvenile Justice',
-        shortDescription: 'Protecting minor offenders in international legal systems',
-        image: '/committees/justiceBg.jpg',
-        fullDescription: `The Commission on Crime Prevention and Criminal Justice (CCPCJ) is a vital ECOSOC body that meets to address global crime and justice issues. Within the scope of juvenile justice, this committee will examine the challenges of international legal systems that impact the youngest members of society.`,
-        backgroundGuideUrl: `https://drive.google.com/file/d/1ajf5ZBf_j1GyvhJ1TJtQFO5gs64GTV1_/view?usp=drive_link`,
-        emailContact: 'avithiananthan25@nobles.edu'
+        id: 'roman-advisory-council',
+        title: 'Roman Advisory Council',
+        shortDescription: 'shortDescription of Roman Advisory Council Committee',
+        image: '/committees/romanBg.jpg',
+        fullDescription: `The Roman Advisory Council is a fast-paced crisis set after the death of the Emperor Nero, who had no designated successor, as various Roman figures vie for control of the vast and prosperous empire. Delegates in this committee will seek to ensure the Roman Empire’s survival while promoting their own agenda, working together to adapt to rapid updates that could ruin everything. Will you lead the Romans to eternal glory as the new Emperor, or will you bring them to Tartarus? And be careful– you never know who to trust. Si vis pacem para bellum!.`,
+        backgroundGuideUrl: `https://drive.google.com/file/d/13BWk1s-60xiUzFSifoJQ_T5YBS-0AmJ3/view?usp=sharing`,
+        emailContact: 'aliu26@nobles.edu'
     },
     {
-        id: 'antarctica-refugee',
-        title: 'Antarctica Refugee Crisis',
-        shortDescription: 'Navigating humanitarian challenges in a climate-changed future',
-        image: '/committees/antarcticaBg.jpg',
-        fullDescription: `Picture this: the year 2065, Antarctica becomes humanity's ultimate doomsday bunker. As climate disasters destroy coasts worldwide, people are flocking to the icy wilderness. Nations grapple with ethical and logistical challenges, from establishing sustainable settlements to protecting the fragile ecosystem.`,
-        backgroundGuideUrl: `https://drive.google.com/file/d/1eUjx2qVMRi6TYXoUCbxz9LXu03rcfEFg/view?usp=drive_link`,
-        emailContact: 'uosakwe27@nobles.edu'
+        id: 'unesco-world-heritage-sites',
+        title: 'UNESCO World Heritage Sites',
+        shortDescription: 'shortDescription of UNESCO World Heritage Sites Committee',
+        image: '/committees/unescoBg.jpg',
+        fullDescription: `The United Nations Educational, Scientific, and Cultural Organization is a specialized agency tasked within this committee with finding feasible and sustainable solutions to threats to World Heritage sites. Delegates will engage in meaningful dialogue to address pertinent issues such as climate change and conflict. Delegates will have to balance debate and collaboration while considering both their sovereign interests and the greater good.`,
+        backgroundGuideUrl: `https://drive.google.com/file/d/1CeTnPqorbH78l_veOmgn1kBfye27svDc/view?usp=sharing`,
+        emailContact: 'ccoleman27@nobles.edu'
     },
     {
-        id: 'great-molasses-flood',
-        title: 'Great Molasses Flood',
-        shortDescription: 'Unraveling the aftermath of Boston\'s most viscous disaster',
-        image: '/committees/molassesBg.jpg',
-        fullDescription: 'The Great Molasses Flood crisis committee takes delegates to the aftermath of one of the most unusual disasters in American history. In January 1919, a massive storage tank burst in Boston\'s North End, unleashing a deadly wave of molasses that caused destruction, loss of life, and widespread chaos. Delegates will step into the roles of city officials, business leaders, and community representatives tasked with managing the fallout: rebuilding infrastructure, addressing public health concerns, and navigating legal and political ramifications. This committee challenges delegates to think critically and collaboratively in the face of a sticky crisis.',
-        backgroundGuideUrl: `https://drive.google.com/file/d/1MCJ5ltB7NriWB-K7Cakn44_Cly4FHYqR/view?usp=drive_link`,
-        emailContact: 'lpeloquin27@nobles.edu'
+        id: 'vaccines',
+        title: 'Vaccines',
+        shortDescription: 'shortDescription of Vaccines Committee',
+        image: '/committees/vaccinesBg.jpg',
+        fullDescription: 'The World Health Organization is the United Nations’ specialized agency for global health. Delegates will engage in meaningful dialogue on vaccines, which have become one of humanity’s most powerful tools to combat disease. Despite their proven effectiveness, equitable vaccine access remains out of reach for millions worldwide, particularly in developing countries. Delegates must work together to find solutions that address the barriers that continue to limit vaccination efforts.',
+        backgroundGuideUrl: `https://drive.google.com/file/d/1c2WLMqSUlhd9yl4gjEGLQOWQg_AI-fJ1/view?usp=sharing`,
+        emailContact: 'ikong26@nobles.edu'
     }
 ];
 
