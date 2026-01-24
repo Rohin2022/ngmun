@@ -35,7 +35,7 @@ const leadershipTeam: StaffMember[] = [
         name: "Camilla Mangal",
         role: "Undersecretary-General",
         image: "/profiles/Camilla_Mangal.jpg",
-        biography: "Chloe is a Junior at Noble and Greenough and has been participating in Noble's MUN as a delegate since freshman year. She has also been chairing for middle school and high school committees at both NGMUN and the United Nations Association of Greater Boston for the last year. Chloe loves to debate, and is an avid participant in Nobles Parliamentary Debate and Mock Trial clubs. In her free time she enjoys making art, wrestling, and reading."
+        biography: "Camilla is a junior at the Noble and Greenough School and has been passionate about Model UN since middle school, both as a delegate and a chair. She loves MUN as a dynamic space to learn, teach, and debate the world around us and loves watching delegates collaborate to solve complex global issues. Outside of committee, Camilla enjoys baking, playing the saxophone, watching movies with friends and family, and taking her labradors, Louie and Cleo, on long hikes."
     },
         // EDIT CAMILLA SHE NEEDS TO BE HERSELF W/ A BIO NOT CHLOE
 
@@ -49,7 +49,7 @@ const leadershipTeam: StaffMember[] = [
         name: "Teja Hanumolu",
         role: "Chief of Staff",
         image: "/profiles/Teja_Hanumolu.jpg",
-        biography: "Eli is a senior at Nobles who has been doing MUN since Middle School. He enjoys the lively debate and intellectual discussion that come with Model UN, and he looks forward to seeing what delegates will bring this year. In his spare time, Eli likes to study history and go sailing."
+        biography: "Teja is a senior at the Noble and Greenough School. He was first introduced to Model UN in middle school and quickly developed a passion for its fast-paced and thinking-on-the-spot nature. This was furthered when he joined high school, as he learned about crisis committees and the wide range of topics conferences have to offer. He is extremely excited to serve as a Chief of Staff in his third NGMUN and engage in thoughtful and thorough debate. More importantly, he hopes that every delegate has fun and comes out learning something new. Outside of Model UN, Teja can be found on the varsity golf team, glazing LeBron, or learning the piano."
     },
     {
         name: "Talia Klevens",
@@ -94,14 +94,14 @@ const committees: CommitteeStaff[] = [
                 role: "Chair",
                 image: "/profiles/Chloe_Coleman.jpg",
                 committee: "UNESCO", // was ECOFIN
-                biography: "Chloe bio"
+                biography: "Chloe is a Junior at Noble and Greenough and has been participating in Noble's MUN as a delegate since freshman year. She has also been chairing for middle school and high school committees at both NGMUN and the United Nations Association of Greater Boston for the last year. Chloe loves to debate, and is an avid participant in Nobles Parliamentary Debate and Mock Trial clubs. In her free time she enjoys making art, wrestling, and reading."
             },
             {
                 name: "Alex Curry",
                 role: "Co-Chair",
                 image: "/profiles/Alex_Curry.jpg",
                 committee: "UNESCO",
-                biography: "Alex C bio"
+                biography: "Alex is currently a sophomore at the Noble and Greenough School and has been participating in Model UN since her Freshman year. Throughout her time as a delegate, MUN has allowed her to meet so many people from so many different places! She is extremely excited to see what the delegates in this year’s UNESCO committee have in store for discussion. Alex loves MUN, but outside of it, you can find her at EAC, skiing, playing tennis, and reading."
             }
         ]
     },
@@ -132,14 +132,14 @@ const committees: CommitteeStaff[] = [
                 role: "Chair",
                 image: "/profiles/Lauren_Peloquin.jpg",
                 committee: "Sokovia",
-                biography: "Lauren bio"
+                biography: "Lauren is a current Junior with 4 years of MUN experience, and she is thrilled to chair the Marvel Sokovia Accords, especially as an avid Marvel fan herself! Outside of MUN, she is an avid trail runner who enjoys competing in cross country and track. A passionate enthusiast of politics and an avid reader, Lauren brings energy and excitement to learning about current events and international policy. She can't wait to guide delegates through an engaging and memorable crisis experience."
             },
             {
                 name: "Bella Bessa",
                 role: "Co-Chair",
                 image: "/profiles/Bella_Bessa.jpg",
                 committee: "Sokovia",
-                biography: "Bella B bio"
+                biography: "Bella is a sophomore at Nobles and Greenough High School. She is really excited to be a committee co-chair at this year's NGMUN conference. Bella has done Model United Nations for over three years now and it is something she is very passionate about. Besides being involved in Model UN, in her free time she plays volleyball and basketball, takes Portuguese lessons, and is involved in a few clubs. She is looking forward to meeting all the delegates at NGMUN and helping supervise a prolific debate."
             }
         ]
     },
@@ -151,14 +151,14 @@ const committees: CommitteeStaff[] = [
                 role: "Chair",
                 image: "/profiles/James_Fair.jpg",
                 committee: "Prohibition",
-                biography: "James bio"
+                biography: "James Fair is a junior at Noble and Greenough school and began attending Model UN conferences in 7th grade. He is excited for a fun and lively committee, and lots of creativity from the delegates. Outside of Model UN he participates in debate, cross country, and track and field."
             },
             {
                 name: "Tomás Hernández",
                 role: "Co-Chair",
                 image: "/profiles/Tomás_Hernández.jpg",
                 committee: "Prohibition",
-                biography: "Tomas bio"
+                biography: "Tomás Hernández is a senior at Noble and Greenough. An active participant in the MUN/Debate club, he also frequently participates in the chess club, science olympiad, and trades stocks by himself or with others. He is a native of Boston, MA, and frequently strolls down the esplanade for personal enjoyment. He plays varsity squash for the Nobles team, and also runs cross country, however, he also frequents the weight room from time to time."
             }
         ]
     },
