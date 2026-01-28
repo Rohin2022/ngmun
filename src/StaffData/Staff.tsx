@@ -55,13 +55,19 @@ const leadershipTeam: StaffMember[] = [
         name: "Talia Klevens",
         role: "Crisis Director",
         image: "/profiles/Talia_Klevens.jpg",
-        biography: "Eli is a senior at Nobles who has been doing MUN since Middle School. He enjoys the lively debate and intellectual discussion that come with Model UN, and he looks forward to seeing what delegates will bring this year. In his spare time, Eli likes to study history and go sailing."
+        biography: "Talia is a junior at Noble and Greenough, who has been involved in Model UN since eighth grade. She is excited to be co-chief of staff this year at NGMUN, and is especially excited to watch the crises, which are her favorite type of committee. When she isn't at conferences, she spends her time playing soccer, rowing, and with her friends."
     },
     {
         name: "Lara Sahagun",
         role: "Crisis Director",
         image: "/profiles/Lara_Sahagun.jpg",
         biography: "Lara Sahagun is a senior at Nobles and has been a MUNer since eighth grade. As the Co-President of Model UN-Debate Club, she loves to prepare for conferences and see delegates engaged in thoughtful debate. She hopes to study international law, and in her free time she likes to read, bike, and act in her school’s theatre productions."
+    },
+    {
+        name: "Vedant Kulkarni",
+        role: "Head of Conference Services",
+        image: "/profiles/Vedant_Kulkarni.jpg",
+        biography: "Vedant is a senior at Nobles and has been involved in Debate and MUN since middle school. As an avid enthusiast of public speaking and argumentation, he is excited to help facilitate a smooth conference experience for all delegates. Outside of MUN, Vedant enjoys rowing with his school team, skiing in New England, and checking new cities off his traveling list."
     }
 
 ];
