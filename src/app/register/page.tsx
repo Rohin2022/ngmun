@@ -117,7 +117,7 @@ export default function Register() {
 
     try {
       // Replace YOUR_GOOGLE_SCRIPT_URL with the URL you got from deployment
-      const response = await fetch('https://script.google.com/macros/s/AKfycbzhMNEV7_Sg1o8QDemMyeReGzjURBk6rKt9OmTko2k/dev', {
+      const response = await fetch('https://script.google.com/macros/s/AKfycbxTpKmU5dfdh6tOvsEzfHjwgPjKK7Ske6J6LVwfT3DTbuAJ4yp2mAvQAdEzpFS0tG-P/exec', {
         method: 'POST',
         headers: {
           'Content-Type': 'text/plain',  // Changed from application/json
